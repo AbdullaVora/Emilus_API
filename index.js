@@ -14,7 +14,10 @@ const PORT = process.env.PORT || 4000;
 const allowedOrigins = [
     'https://app.printfuse.in',
     'http://localhost:3000', // Add frontend's origin explicitly
-    `http://${process.env.HOST}:3000` // Example frontend URL
+    'https://localhost:3000', // Add frontend's origin explicitly
+    `http://${process.env.HOST}:3000`, // Example frontend URL
+    `https://${process.env.HOST}:3000`, // Example frontend URL
+    'https://emilus-e-commerce.onrender.com'
 ];
 
 const corsOptions = {
