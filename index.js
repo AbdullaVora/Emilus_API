@@ -44,6 +44,7 @@ app.use(express.urlencoded({ extended: true, limit: '100mb' }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Routes
+
 app.use('/api/auth', userRouter);
 app.use('/api/ecommerce', productRouter);
 app.use('/api/ecommerce', variantRouter);
